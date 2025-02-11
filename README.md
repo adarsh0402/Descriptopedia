@@ -1,2 +1,1 @@
-# Descriptopedia
- 
+# jgroupcomp

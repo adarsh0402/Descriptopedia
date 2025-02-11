@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IRDAI MCQ Quiz</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: hsla(41, 100%, 70%, 1);
+
+        background: linear-gradient(
+          90deg,
+          hsla(41, 100%, 70%, 1) 0%,
+          hsla(7, 76%, 47%, 1) 100%
+        );
+
+        background: -moz-linear-gradient(
+          90deg,
+          hsla(41, 100%, 70%, 1) 0%,
+          hsla(7, 76%, 47%, 1) 100%
+        );
+
+        background: -webkit-linear-gradient(
+          90deg,
+          hsla(41, 100%, 70%, 1) 0%,
+          hsla(7, 76%, 47%, 1) 100%
+        );
+
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFCF67", endColorstr="#D3321D", GradientType=1 );
+      }
+      .fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans p-8">
+    <div class="max-w-5xl mx-auto bg-white rounded-lg shadow-md p-8 fade-in">
+      <h1 class="text-4xl text-center mb-6 font-bold text-gray-800">
+        IRDAI MCQ Quiz 🎓
+      </h1>
+
+      <!-- Start notes link -->
+      <div class="mb-6 flex justify-end">
+        <button
+          onclick="location.href='https://tinyurl.com/irdaigknotes'"
+          type="button"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"
+        >
+          GK Notes
+        </button>
+
+        <button
+          onclick="location.href='https://docs.google.com/document/d/e/2PACX-1vTr5-44E5qZvPfmD4h8PwdBBjzyI9ivfriFMsfYHEfd2QYncKch5XV1NKlFZiPBebyMYfHzNhYFLqtN/pub'"
+          type="button"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"
+        >
+          GK Notes2 (Aug-Sep)
+        </button>
+
+        <!-- New button to show all questions -->
+        <button
+          id="showAllQuestionsButton"
+          class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Show All Questions
+        </button>
+
+        <button
+          id="backToQuizButton"
+          class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded ml-2"
+        >
+          Back to Quiz
+        </button>
+      </div>
+      <!-- End notes link -->
+
+      <div id="quizSection-outer">
+        <div id="quizSection" class="mb-6">
+          <label for="questionCount" class="block text-lg mb-2 text-gray-700"
+            >Select Number of Questions (Max 100):</label
+          >
+          <input
+            type="range"
+            id="questionCount"
+            min="1"
+            max="100"
+            value="10"
+            class="w-full"
+          />
+          <p id="selectedCount" class="text-center text-lg">10</p>
+          <button
+            id="loadQuestionsButton"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
+          >
+            Load Questions
+          </button>
+        </div>
+
+        <form id="quizForm" class="mb-4">
+          <div id="questionsContainer" class="mb-4"></div>
+          <button
+            type="submit"
+            class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Submit Answers
+          </button>
+        </form>
+
+        <div
+          id="results"
+          class="results hidden mt-6 bg-white shadow-md rounded p-6"
+        ></div>
+      </div>
+
+      <!-- New button to show all questions -->
+
+      <div
+        id="allQuestionsContainer"
+        class="hidden mt-4 bg-white rounded-lg shadow-md p-4 fade-in"
+      >
+        <h2 class="text-2xl mb-4">All Questions</h2>
+        <table class="min-w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="border border-gray-300 px-4 py-2">S.No</th>
+              <th class="border border-gray-300 px-4 py-2">Question</th>
+              <th class="border border-gray-300 px-4 py-2">Correct Answer</th>
+            </tr>
+          </thead>
+          <tbody id="questionsTableBody">
+            <!-- Questions will be inserted here -->
+          </tbody>
+        </table>
+        <button
+          id="backToQuizButton"
+          class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mt-4"
+        >
+          Back to Quiz
+        </button>
+      </div>
+    </div>
+
+    <script>
+      let allQuestions = []; // To hold all questions from the JSON file
+      let selectedQuestions = []; // To hold the random questions for the quiz
+
+      // Fetch the JSON data and load random questions
+      async function loadQuestions() {
+        const response = await fetch("irdai.json");
+        allQuestions = await response.json(); // Store fetched questions in the global variable
+
+        // Clear previous results and load default 10 questions
+        clearPreviousOutput();
+        loadRandomQuestions(10);
+      }
+
+      function loadRandomQuestions(count) {
+        clearPreviousOutput(); // Clear previous questions and results
+
+        const shuffledQuestions = shuffleArray(allQuestions); // Shuffle the questions
+        selectedQuestions = shuffledQuestions.slice(0, count); // Select the desired number of questions
+        displayQuestions(selectedQuestions);
+      }
+
+      // Fisher-Yates shuffle algorithm
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+        }
+        return array;
+      }
+
+      function displayQuestions(questionsToDisplay) {
+        const container = document.getElementById("questionsContainer");
+        questionsToDisplay.forEach((q, index) => {
+          const questionDiv = document.createElement("div");
+          questionDiv.className =
+            "mb-4 p-4 border border-gray-300 rounded shadow";
+          questionDiv.innerHTML = `
+                    <p class="font-bold text-gray-800">${index + 1}. ${
+            q.Question
+          }</p>
+                    ${q.Options.split("\n")
+                      .map(
+                        (option) => `
+                            <label class="block mt-2">
+                                <input type="radio" name="question${index}" value="${option.trim()}" class="mr-2">
+                                ${option.trim()}
+                            </label>
+                        `
+                      )
+                      .join("")}
+                `;
+          container.appendChild(questionDiv);
+        });
+      }
+
+      function clearPreviousOutput() {
+        // Clear questions and results
+        document.getElementById("questionsContainer").innerHTML = ""; // Clear previous questions
+        const results = document.getElementById("results");
+        results.innerHTML = ""; // Clear previous results
+        results.classList.add("hidden"); // Hide results
+        document
+          .getElementById("allQuestionsContainer")
+          .classList.add("hidden"); // Hide all questions table
+        document.getElementById("quizSection").classList.remove("hidden"); // Show quiz section
+      }
+
+      document
+        .getElementById("questionCount")
+        .addEventListener("input", function () {
+          document.getElementById("selectedCount").innerText = this.value;
+        });
+
+      document
+        .getElementById("loadQuestionsButton")
+        .addEventListener("click", function () {
+          const questionCount = parseInt(
+            document.getElementById("questionCount").value
+          );
+          loadRandomQuestions(questionCount);
+        });
+
+      document
+        .getElementById("quizForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const results = document.getElementById("results");
+          results.innerHTML = ""; // Clear previous results
+
+          let score = 0;
+          let details = "";
+          const formData = new FormData(this);
+
+          selectedQuestions.forEach((questionData, index) => {
+            const userAnswer = formData.get(`question${index}`);
+            if (userAnswer === questionData.Answer) {
+              score++;
+              details += `<p class="text-green-600">Q${index + 1}: ✅ <strong>${
+                questionData.Question
+              }</strong></p>`;
+            } else {
+              details += `<p class="text-red-600">Q${index + 1}: ❌ <strong>${
+                questionData.Question
+              }</strong></p>`;
+            }
+            details += `<p class="text-green-600">Your Answer: ${
+              userAnswer ? userAnswer : "Not answered"
+            }</p>`;
+            details += `<p class="text-green-600">Correct Answer: ${questionData.Answer}</p>`;
+            details += `<p class="text-blue-600">Details: ${questionData.Details}</p><br>`;
+          });
+
+          results.innerHTML = `<h3 class="text-lg font-bold">Your Score: ${score} / ${selectedQuestions.length}</h3><div class="mt-4">${details}</div>`;
+          results.classList.remove("hidden"); // Show results
+        });
+
+      // Show all questions in a table
+      document
+        .getElementById("showAllQuestionsButton")
+        .addEventListener("click", function () {
+          const tableBody = document.getElementById("questionsTableBody");
+          tableBody.innerHTML = ""; // Clear previous rows
+
+          allQuestions.forEach((q, index) => {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                    <td class="border border-gray-300 px-4 py-2">${
+                      index + 1
+                    }</td>
+                    <td class="border border-gray-300 px-4 py-2">${
+                      q.Question
+                    }</td>
+                    <td class="border border-gray-300 px-4 py-2">${
+                      q.Answer
+                    }</td>
+                `;
+            tableBody.appendChild(row);
+          });
+
+          document
+            .getElementById("allQuestionsContainer")
+            .classList.remove("hidden");
+          document.getElementById("quizSection-outer").classList.add("hidden"); // Hide quiz section
+        });
+
+      // Back to quiz button
+      document
+        .getElementById("backToQuizButton")
+        .addEventListener("click", function () {
+          document
+            .getElementById("allQuestionsContainer")
+            .classList.add("hidden"); // Hide all questions table
+          document
+            .getElementById("quizSection-outer")
+            .classList.remove("hidden"); // Show quiz section
+        });
+
+      loadQuestions(); // Load questions on page load
+    </script>
+  </body>
+</html>

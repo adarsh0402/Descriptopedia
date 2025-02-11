@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="transparent_logo.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+  <style>
+    .logo-image-nav {
+      height: 4rem;
+      padding: 5px;
+      /* Adjust the height as needed */
+    }
+  </style>
+  <title>DescriptoPedia (AboutUs)</title>
+</head>
+
+<body>
+  <div class="flex justify-center bg-black body-font navbar sticky top-0 z-30 w-full sm:px-4 shadow-xl">
+    <nav class="self-center w-full max-w-7xl  ">
+      <div class="flex flex-col lg:flex-row justify-around items-center text-white">
+        <div class="flex items-center">
+          <img src="logo.jpg" class="mr-2 logo-image-nav">
+        </div>
+        <ul class="hidden lg:flex items-center text-[18px] font-semibold pl-32">
+          <li class="hover:underline  underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5"><a
+              href="about_us.html">About</a></li>
+          <li class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5"><a
+              href="contact_us.html">Contact</a></li>
+          <li class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5"><a
+            href="Exams.html">Exams</a></li>
+            <li class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5">
+              <a href="blog.html">Blog</a>
+            </li>
+        </ul>
+        <div class="text-white text-center text-base pr-5  inline-flex"> <a href="#"
+            class="w-8 h-8 inline-block rounded-full pt-[6px] hover:text-blue-500"><i class="fa fa-twitter"></i></a> <a
+            href="#" class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"><i
+              class="fa fa-instagram"></i></a> <a href="#"
+            class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"><i class="fa fa-facebook"></i></a> <a
+            href="#" class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"><i
+              class="fa fa-google"></i></a> <a href="#"
+            class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- component -->
+  <div x-data="setup()" x-init="$refs.loading.classList.add('hidden');" class="z-50 absolute lg:hidden">
+    <div class="flex antialiased text-gray-900 bg-gray-100 dark:bg-dark dark:text-light">
+      <!-- Loading screen -->
+      <div x-ref="loading"
+        class="fixed inset-0 z-50 flex items-center justify-center text-2xl font-semibold text-white bg-white">
+        Loading.....
+      </div>
+
+      <!-- Sidebar -->
+      <div x-transition:enter="transform transition-transform duration-300" x-transition:enter-start="-translate-x-full"
+        x-transition:enter-end="translate-x-0" x-transition:leave="transform transition-transform duration-300"
+        x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-full" x-show="isSidebarOpen"
+        class="fixed inset-y-0 z-10 flex w-80">
+        <!-- Curvy shape -->
+        <svg class="absolute inset-0 w-full h-full text-white" style="filter: drop-shadow(10px 0 10px #00000030)"
+          preserveAspectRatio="none" viewBox="0 0 309 800" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M268.487 0H0V800H247.32C207.957 725 207.975 492.294 268.487 367.647C329 243 314.906 53.4314 268.487 0Z" />
+        </svg>
+        <!-- Sidebar content -->
+        <div class="z-10 flex flex-col flex-1">
+          <div class="flex items-center justify-between flex-shrink-0 w-64 p-4">
+            <!-- Close btn -->
+            <button @click="isSidebarOpen = false" class="p-1 rounded-lg focus:outline-none focus:ring">
+              <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              <span class="sr-only">Close sidebar</span>
+            </button>
+          </div>
+
+          <nav class="flex flex-col w-64 p-4 mt-5">
+            <a href="index.html" class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+              </svg>                
+              <span>Home</span>
+            </a>
+          </nav>
+          <nav class="flex flex-col  w-64 p-4">
+            <a href="Exams.html" class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path d="M11.7 2.805a.75.75 0 01.6 0A60.65 60.65 0 0122.83 8.72a.75.75 0 01-.231 1.337 49.949 49.949 0 00-9.902 3.912l-.003.002-.34.18a.75.75 0 01-.707 0A50.009 50.009 0 007.5 12.174v-.224c0-.131.067-.248.172-.311a54.614 54.614 0 014.653-2.52.75.75 0 00-.65-1.352 56.129 56.129 0 00-4.78 2.589 1.858 1.858 0 00-.859 1.228 49.803 49.803 0 00-4.634-1.527.75.75 0 01-.231-1.337A60.653 60.653 0 0111.7 2.805z" />
+                <path d="M13.06 15.473a48.45 48.45 0 017.666-3.282c.134 1.414.22 2.843.255 4.285a.75.75 0 01-.46.71 47.878 47.878 0 00-8.105 4.342.75.75 0 01-.832 0 47.877 47.877 0 00-8.104-4.342.75.75 0 01-.461-.71c.035-1.442.121-2.87.255-4.286A48.4 48.4 0 016 13.18v1.27a1.5 1.5 0 00-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.661a6.729 6.729 0 00.551-1.608 1.5 1.5 0 00.14-2.67v-.645a48.549 48.549 0 013.44 1.668 2.25 2.25 0 002.12 0z" />
+                <path d="M4.462 19.462c.42-.419.753-.89 1-1.394.453.213.902.434 1.347.661a6.743 6.743 0 01-1.286 1.794.75.75 0 11-1.06-1.06z" />
+              </svg>
+              
+              <span>Exams</span>
+            </a>
+          </nav>
+          <nav class="flex flex-col w-64 p-4">
+            <a href="contact_us.html" class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M19.5 9.75a.75.75 0 01-.75.75h-4.5a.75.75 0 01-.75-.75v-4.5a.75.75 0 011.5 0v2.69l4.72-4.72a.75.75 0 111.06 1.06L16.06 9h2.69a.75.75 0 01.75.75z" clip-rule="evenodd" />
+                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd" />
+              </svg>
+              <span>Contact us</span>
+            </a>
+          </nav>
+          <nav class="flex flex-col w-64 p-4">
+            <a href="about_us.html" class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M2.25 2.25a.75.75 0 000 1.5H3v10.5a3 3 0 003 3h1.21l-1.172 3.513a.75.75 0 001.424.474l.329-.987h8.418l.33.987a.75.75 0 001.422-.474l-1.17-3.513H18a3 3 0 003-3V3.75h.75a.75.75 0 000-1.5H2.25zm6.04 16.5l.5-1.5h6.42l.5 1.5H8.29zm7.46-12a.75.75 0 00-1.5 0v6a.75.75 0 001.5 0v-6zm-3 2.25a.75.75 0 00-1.5 0v3.75a.75.75 0 001.5 0V9zm-3 2.25a.75.75 0 00-1.5 0v1.5a.75.75 0 001.5 0v-1.5z" clip-rule="evenodd" />
+              </svg>                               
+              <span>About Us</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <main class="flex flex-col items-center justify-center flex-1">
+        <!-- Page content -->
+        <button @click="isSidebarOpen = true" class="fixed p-2 text-white bg-blue-700 rounded-lg top-5 left-5">
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <span class="sr-only">Open menu</span>
+        </button>
+        <h1 class="sr-only">Home</h1>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.1/alpine.js"></script>
+  <script>
+    const setup = () => {
+      return {
+        isSidebarOpen: false,
+      }
+    }
+  </script>
+
+  <!-- navbar ends -->
+
+  <!-- component -->
+
+  <!-- header ends -->
+  <div class="container mx-auto">
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-10 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/2 md:w-1/2 p-4">
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out h-full flex flex-col">
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Mission 🎯</h2>
+              <p class="leading-relaxed text-base flex-grow">
+                At DescriptoPedia, our mission is to empower aspiring candidates preparing for competitive exams like SEBI, RBI, NABARD, and IBPS by providing comprehensive and personalized evaluation services for their written skills. We aim to bridge the gap between raw talent and exam success by offering expert feedback on essays, précis, letters, and reading comprehension. 
+                <br><br>
+                Our platform is designed to help candidates refine their writing abilities, ensuring they meet the rigorous standards required in these high-stakes exams. We believe in nurturing potential by delivering insightful critiques that focus not just on identifying errors but on fostering improvement and growth. 📚
+                <br><br>
+                Through our dedicated services, we strive to enhance each aspirant's confidence and competence, enabling them to express their ideas clearly, concisely, and effectively. By leveraging advanced evaluation techniques and a deep understanding of exam requirements, we are committed to helping candidates achieve their goals and unlock their full potential. 🌟
+                <br><br>
+                Our long-term goal is to expand our services to cover a broader range of competitive exams and to provide resources that support holistic learning, including workshops, tutorials, and personalized coaching. Through our unwavering focus on innovation and excellence, we seek to inspire and empower the next generation of professionals, helping them to achieve their dreams and make a meaningful impact in their chosen fields. 🚀
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/2 md:w-1/2 p-4">
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out h-full flex flex-col">
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Vision 🌟</h2>
+              <p class="leading-relaxed text-base flex-grow">
+                Our vision at DescriptoPedia is to become the leading platform for descriptive writing evaluation, recognized for its unparalleled commitment to quality, accuracy, and aspirant success. We envision a future where every candidate, regardless of their background or location, has access to expert feedback that is both affordable and effective. 🌍
+                <br><br>
+                By continuously refining our evaluation methodologies and incorporating the latest advancements in educational technology, we aim to set new standards in the field of exam preparation. We aspire to create a community of learners who are not only prepared for their exams but are also equipped with the communication skills necessary for professional success. 📚
+                <br><br>
+                Our long-term goal is to expand our services to cover a broader range of competitive exams and to provide resources that support holistic learning, including workshops, tutorials, and personalized coaching. Through our unwavering focus on innovation and excellence, we seek to inspire and empower the next generation of professionals, helping them to achieve their dreams and make a meaningful impact in their chosen fields. 🚀
+
+                <br><br>
+                Our long-term goal is to expand our services to cover a broader range of competitive exams and to provide resources that support holistic learning, including workshops, tutorials, and personalized coaching. Through our unwavering focus on innovation and excellence, we seek to inspire and empower the next generation of professionals, helping them to achieve their dreams and make a meaningful impact in their chosen fields. 🚀
+              </p>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </section>
+  </div>
+
+</body>
+<!-- Footer starts -->
+<div class="bg-black p-3 mt-6 flex flex-col space-y-8 md:flex-row md:justify-between md:items-center md:space-y-0">
+  <div class="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+    
+    <!-- Image Banner on the left -->
+    <div class="flex-shrink-0 mb-4 md:mb-0">
+      <img src="baneer_best-removebg-preview.png" alt="Banner" class="h-10 w-auto md:h-12 lg:h-14">
+    </div>
+    
+    <!-- Text in the center -->
+    <p class="text-center flex-grow text-gray-200">Crafted with <span class="text-red-500">♥</span> Love for Aspirants</p>
+    
+    <!-- Counter on the right -->
+    <div class="flex-shrink-0 mt-4 md:mt-0">
+      <p class="text-right px-3"><script type="text/javascript" src="https://www.free-counters.org/count/g39b"></script></p>
+    </div>
+    
+  </div>
+</div>
+<!-- Footer ends -->
+
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="transparent_logo.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+   
+    <title>SEBI Descriptive English Grader</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Loader style */
+        .loader {
+            border: 16px solid #f3f3f3; /* Light grey */
+            border-top: 16px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -60px; /* Half of the width */
+            margin-top: -60px; /* Half of the height */
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loader-container {
+            position: relative;
+            height: 100px; /* Adjust as needed */
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-image-nav {
+        height: 5rem;
+        /* Adjust the height as needed */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="flex justify-center bg-black body-font navbar sticky top-0 z-30 w-full sm:px-4 shadow-xl">
+        <nav class="self-center w-full max-w-7xl  ">
+          <div class="flex flex-col lg:flex-row justify-around items-center text-white">
+            <div class="flex items-center">
+              <img src="logo.jpg" class="mr-2 logo-image-nav">
+            </div>
+            <ul class="hidden lg:flex items-center text-[18px] font-semibold pl-32">
+              <li class="hover:underline  underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5"><a
+                  href="about_us.html">About</a></li>
+              <li class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5"><a
+                  href="products.html">Products</a></li>
+              <li class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5"><a
+                  href="contact_us.html">Contact</a></li>
+              <li class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5"><a
+                  href="careers.html">Careers</a></li>
+            </ul>
+            <div class="text-white text-center text-base pr-5  inline-flex"> <a href="#"
+                class="w-8 h-8 inline-block rounded-full pt-[6px] hover:text-blue-500"><i class="fa fa-twitter"></i></a> <a
+                href="#" class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"><i
+                  class="fa fa-instagram"></i></a> <a href="#"
+                class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"><i class="fa fa-facebook"></i></a> <a
+                href="#" class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"><i
+                  class="fa fa-google"></i></a> <a href="#"
+                class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- component -->
+      <div x-data="setup()" x-init="$refs.loading.classList.add('hidden');" class="z-50 absolute lg:hidden">
+        <div class="flex antialiased text-gray-900 bg-gray-100 dark:bg-dark dark:text-light">
+          <!-- Loading screen -->
+          <div x-ref="loading"
+            class="fixed inset-0 z-50 flex items-center justify-center text-2xl font-semibold text-white bg-white">
+            Loading.....
+          </div>
+    
+          <!-- Sidebar -->
+          <div x-transition:enter="transform transition-transform duration-300" x-transition:enter-start="-translate-x-full"
+            x-transition:enter-end="translate-x-0" x-transition:leave="transform transition-transform duration-300"
+            x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-full" x-show="isSidebarOpen"
+            class="fixed inset-y-0 z-10 flex w-80">
+            <!-- Curvy shape -->
+            <svg class="absolute inset-0 w-full h-full text-white" style="filter: drop-shadow(10px 0 10px #00000030)"
+              preserveAspectRatio="none" viewBox="0 0 309 800" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M268.487 0H0V800H247.32C207.957 725 207.975 492.294 268.487 367.647C329 243 314.906 53.4314 268.487 0Z" />
+            </svg>
+            <!-- Sidebar content -->
+            <div class="z-10 flex flex-col flex-1">
+              <div class="flex items-center justify-between flex-shrink-0 w-64 p-4">
+                <!-- Close btn -->
+                <button @click="isSidebarOpen = false" class="p-1 rounded-lg focus:outline-none focus:ring">
+                  <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  <span class="sr-only">Close sidebar</span>
+                </button>
+              </div>
+              <!-- <nav class="flex flex-col w-64 p-4 mt-4">
+                <a href="products.html" class="flex items-center space-x-2">
+                  <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                  <span>Products</span>
+                </a>
+              </nav> -->
+    
+              <nav class="flex flex-col w-64 p-4 mt-4">
+                <a href="about_us.html" class="flex items-center space-x-2">
+                  <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                  <span>About Us</span>
+                </a>
+              </nav>
+    
+              <nav class="flex flex-col  w-64 p-4">
+                <a href="careers.html" class="flex items-center space-x-2">
+                  <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                  <span>Careers</span>
+                </a>
+              </nav>
+    
+              <nav class="flex flex-col w-64 p-4">
+                <a href="products.html" class="flex items-center space-x-2">
+                  <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                  <span>Products</span>
+                </a>
+              </nav>
+    
+              <nav class="flex flex-col w-64 p-4">
+                <a href="contact_us.html" class="flex items-center space-x-2">
+                  <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                  <span>Contact us</span>
+                </a>
+              </nav>
+    
+              <nav class="flex flex-col w-64 p-4">
+                <a href="index.html" class="flex items-center space-x-2">
+                  <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                  <span>Home</span>
+                </a>
+              </nav>
+    
+            </div>
+          </div>
+          <main class="flex flex-col items-center justify-center flex-1">
+            <!-- Page content -->
+            <button @click="isSidebarOpen = true" class="fixed p-2 text-white bg-blue-700 rounded-lg top-5 left-5">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <span class="sr-only">Open menu</span>
+            </button>
+            <h1 class="sr-only">Home</h1>
+    
+          </main>
+        </div>
+      </div>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.1/alpine.js"></script>
+      <script>
+        const setup = () => {
+          return {
+            isSidebarOpen: false,
+          }
+        }
+      </script>
+
+<div class="container mx-auto mt-10 p-5 bg-white rounded-lg shadow-md">
+    <h2 class="text-center text-2xl font-bold mb-6">SEBI Descriptive English Grader</h2>
+
+    <div class="mb-6">
+        <label for="essayInput" class="block text-gray-700 font-medium mb-2">Enter your essay below:</label>
+        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="essayInput" rows="10" placeholder="Type your essay here..."></textarea>
+    </div>
+    
+    <div class="mb-6">
+        <button class="px-6 py-3 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 focus:outline-none" onclick="analyzeEssay()">Analyze Essay</button>
+    </div>
+
+    <div class="mb-6">
+        <h5 class="text-lg font-semibold">Total Words: <span id="wordCount" class="font-normal">0</span></h5>
+    </div>
+
+    <!-- Alert messages -->
+    <div id="alertContainer" class="mb-6">
+        <!-- Success alert will be inserted here -->
+    </div>
+
+    <div id="analysisSection" class="mt-6" style="display:none;">
+        <h4 class="text-xl font-semibold mb-4">Essay Analysis</h4>
+        <div id="analysisText" class="text-gray-700"></div>
+    </div>
+
+    <div class="loader-container">
+        <div class="loader" id="loaderContainer" style="display: none;"></div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+    function analyzeEssay() {
+        const essayText = document.getElementById("essayInput").value;
+        const wordCount = essayText.split(/\s+/).filter(word => word.length > 0).length;
+        
+        // Update word count display
+        document.getElementById("wordCount").innerText = wordCount;
+
+        const alertContainer = document.getElementById("alertContainer");
+        alertContainer.innerHTML = ""; // Clear previous alerts
+
+        if (wordCount < 1) {
+            alertContainer.innerHTML = `
+                <div class="p-4 mb-4 text-yellow-700 bg-yellow-100 rounded-lg" role="alert">
+                    The essay must be at least 320 words.
+                </div>`;
+            return;
+        } else if (wordCount > 400) {
+            alertContainer.innerHTML = `
+                <div class="p-4 mb-4 text-red-700 bg-red-100 rounded-lg" role="alert">
+                    Your essay is ${wordCount} words long. Please stick within the limit of 400 words.
+                </div>`;
+        }
+
+        // Show loader
+        document.getElementById("loaderContainer").style.display = "block";
+        document.getElementById("analysisSection").style.display = "none";
+
+        const myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+
+        const raw = JSON.stringify({
+            "contents": [
+                {
+                    "role": "user",
+                    "parts": [
+                        {
+                            "text": `You're an expert essay evaluator with over 15 years of experience in assessing writing quality for competitive examinations and you are expert in English. You have a keen eye for grammatical accuracy, clarity of expression, and overall coherence of thought. Your goal is to provide constructive feedback to candidates preparing for the SEBI Grade A Descriptive English Exam.
+                            Your task is to analyze an essay provided to you. Here are the details about the essay I want you to evaluate: 
+                            - Essay Text: ${essayText} 
+                            - Any specific focus areas (if applicable):  
+                            Be very detailed
+                            Your responses should be concise, clear, and focused on providing grammatical assistance. Follow the provided guidelines exactly and strictly stick to the output format.
+
+                            Output:
+                            1. Grammatical Analysis 
+                                xxxxx 
+                            2. Overall Clarity 
+                                xxxx`
+                        }
+                    ]
+                }
+            ]
+        });
+
+        const requestOptions = {
+            method: "POST",
+            headers: myHeaders,
+            body: raw,
+            redirect: "follow"
+        };
+        URL = atob("aHR0cHM6Ly9nZW5lcmF0aXZlbGFuZ3VhZ2UuZ29vZ2xlYXBpcy5jb20vdjEvbW9kZWxzL2dlbWluaS1wcm86Z2VuZXJhdGVDb250ZW50P2tleT1BSXphU3lBNDdBZkttckU0bzd5cmlzUy1UY29pekJaMWNqY3plUUE=")
+        console.log(URL);
+
+        fetch(URL, requestOptions)
+            .then((response) => response.text())
+            .then((result) => {
+                const resultJSON = JSON.parse(result);
+                const analysisText = resultJSON.candidates[0].content.parts[0].text;
+
+                // Hide loader
+                document.getElementById("loaderContainer").style.display = "none";
+
+                // Display the analysis section and text
+                document.getElementById("analysisSection").style.display = "block";
+                document.getElementById("analysisText").innerHTML = marked.parse(analysisText);
+            })
+            .catch((error) => {
+                // Hide loader on error
+                document.getElementById("loaderContainer").style.display = "none";
+                console.error(error);
+            });
+    }
+</script>
+</body>
+
+<div class="mt-6">
+    <div class="bg-black p-3 space-y-10 md:grid grid-cols-2 md:-mt-6 lg:grid-cols-4">
+      <div class="w-1/2 md:ml-24 md:mt-9 md:w-3/4">
+        <h1 class="text-orange-400 text-xl font-medium">J-Group</h1> <br />
+        <p class="text-gray-300/80 text-base hover:text-yellow-300 cursor-none"> K-13, Panki Industrial Area, Site-3
+          <br /> Kanpur, Uttar Pradesh 208022 <br /> India </p> <br />
+        <p class="text-gray-200/80 text-base hover:text-yellow-300 cursor-pointer"> <strong
+            class="tracking-wide text-orange-400 font-normal">Phone:</strong> +91 9839091416 </p>
+        <p class="text-gray-200/80 text-base hover:text-yellow-300 cursor-pointer"> <strong
+            class="tracking-wide text-orange-400 font-normal">Email:</strong> <a href="mailto:jaimurjani@jgroup.co.in">jaimurjani@jgroup.co.in</a> </p>
+      </div>
+      <div class="leading-9 md:w-2/4 md:order-3 md:ml-24">
+        <h1 class="text-orange-400 text-xl font-medium tracking-[0.030rem]"> Useful Links </h1>
+        <ul class="mt-2 text-gray-300/80">
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              Home</a> </li>
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              About Us</a> </li>
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              Services</a> </li>
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              Terms of service</a> </li>
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              Privacy policy</a> </li>
+        </ul>
+      </div>
+      <div class="leading-9 md:w-3/4 md:order-4">
+        <h1 class="text-orange-400 text-xl font-medium tracking-[0.030rem]"> Our Services </h1>
+        <ul class="mt-2 text-gray-300/80">
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300"> Web
+              Design</a> </li>
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300"> Web
+              Development</a> </li>
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              Product Management</a> </li>
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              Marketing</a> </li>
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              Graphic Design</a> </li>
+        </ul>
+      </div>
+      <div class="md:order-2 lg:order-last">
+        <h1 class="text-orange-400 text-xl font-medium tracking-[0.030rem]"> Join Our Newsletter </h1> <br />
+        <p class="text-gray-300/80 w-3/5 leading-7 mb-5 md:w-3/4"> Join 25,000+ others and never miss out on new
+          tips,tutorials, and more. </p> <input type="email" placeholder="Enter E-mail Here"
+          class="py-1 px-2 placeholder-gray-400 rounded-tl-xl focus: outline-none focus:border border-orange-600 md:w-1/2 lg:w-3/5" />
+        <button class="text-white bg-orange-400 p-1 -translate-x-1 rounded-br-xl hover:bg-orange-500"> Subscribe
+        </button>
+      </div>
+    </div>
+    <div class="bg-black p-3 flex flex-col text-center pt-5 space-y-8 md:flex-row md:justify-between md:space-y-0">
+      <div
+        class="flex mx-3 justify-between space-x-20 md:flex-row text-gray-200 md:space-x-28 md:ml-20 lg:ml-24 lg:space-x-[13rem] xl:space-x-72 xl:ml-24">
+        <p>© 2024 DescriptivePedia. All Right Reserved.</p>
+      </div>
+      <div
+        class="text-white pb-4 text-center text-xl space-x-2 md:w-2/4 md:pb-0 md:pl-2 md:space-x-1 lg:pl-[171px] lg:space-x-2 xl:pl-44">
+        <a href="#"
+          class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+            class="fa fa-twitter"></i></a> <a href="#"
+          class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+            class="fa fa-instagram"></i></a> <a href="#"
+          class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+            class="fa fa-facebook"></i></a> <a href="#"
+          class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+            class="fa fa-google"></i></a> <a href="#"
+          class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+            class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+</html>
