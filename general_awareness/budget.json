@@ -1,0 +1,602 @@
+[
+  {
+    "Question": "What is the overarching vision emphasized in the Budget 2025-26?",
+    "Options": "A) Digital India\nB) Make in India\nC) Viksit Bharat\nD) Skill India\nE) Startup India",
+    "Answer": "C) Viksit Bharat",
+    "Details": "The Budget 2025-26 underscores the vision of 'Viksit Bharat,' which translates to 'Developed India.' This vision encompasses goals such as zero poverty, universal quality education, comprehensive healthcare, full employment with skilled labor, significant participation of women in economic activities, and establishing India as the 'food basket of the world.'"
+  },
+  {
+    "Question": "Which program is introduced to develop 100 districts with low agricultural productivity?",
+    "Options": "A) National Rural Livelihood Mission\nB) Prime Minister Dhan-Dhaanya Krishi Yojana\nC) Pradhan Mantri Fasal Bima Yojana\nD) Rashtriya Krishi Vikas Yojana\nE) Kisan Credit Card Scheme",
+    "Answer": "B) Prime Minister Dhan-Dhaanya Krishi Yojana",
+    "Details": "The 'Prime Minister Dhan-Dhaanya Krishi Yojana' is a new initiative aimed at developing 100 districts with low productivity. The program focuses on enhancing agricultural productivity, promoting crop diversification, improving irrigation, and facilitating credit availability to benefit approximately 1.7 crore farmers."
+  },
+  {
+    "Question": "What is the primary goal of the 'Rural Prosperity and Resilience' program?",
+    "Options": "A) Urbanization of rural areas\nB) Addressing under-employment in agriculture\nC) Promoting industrialization in villages\nD) Reducing rural population\nE) Encouraging migration to cities",
+    "Answer": "B) Addressing under-employment in agriculture",
+    "Details": "The 'Rural Prosperity and Resilience' program aims to tackle under-employment in agriculture by focusing on skilling, investment, technology, and invigorating the rural economy. The goal is to generate ample opportunities in rural areas, making migration an option rather than a necessity."
+  },
+  {
+    "Question": "Which crops are the focus of the six-year mission to achieve self-reliance in pulses?",
+    "Options": "A) Tur, Urad, and Masoor\nB) Moong, Chana, and Rajma\nC) Arhar, Masoor, and Chana\nD) Urad, Moong, and Rajma\nE) Chana, Rajma, and Arhar",
+    "Answer": "A) Tur, Urad, and Masoor",
+    "Details": "The government has launched a six-year mission focusing on pulses such as Tur (pigeon peas), Urad (black gram), and Masoor (red lentils) to achieve self-reliance and reduce dependence on imports."
+  },
+  {
+    "Question": "What is the purpose of the 'Prime Minister Dhan-Dhaanya Krishi Yojana'?",
+    "Options": "A) To provide free seeds to farmers\nB) To promote organic farming\nC) To develop agricultural districts and improve productivity\nD) To subsidize fertilizers\nE) To encourage rooftop farming",
+    "Answer": "C) To develop agricultural districts and improve productivity",
+    "Details": "The 'Prime Minister Dhan-Dhaanya Krishi Yojana' aims to transform 100 districts into agri-hubs by enhancing productivity, adopting sustainable practices, improving storage and irrigation facilities, and facilitating credit availability."
+  },
+  {
+    "Question": "Which program aims to generate ample opportunities in rural areas to make migration an option rather than a necessity?",
+    "Options": "A) Rural Employment Guarantee Scheme\nB) Rural Prosperity and Resilience Program\nC) National Rural Development Mission\nD) Pradhan Mantri Gram Sadak Yojana\nE) Deen Dayal Upadhyaya Grameen Kaushalya Yojana",
+    "Answer": "B) Rural Prosperity and Resilience Program",
+    "Details": "The 'Rural Prosperity and Resilience' program focuses on addressing under-employment in agriculture through skilling, investment, technology, and invigorating the rural economy, aiming to create sufficient opportunities in rural areas."
+  },
+  {
+    "Question": "How many districts will be covered in Phase-1 of the 'Rural Prosperity and Resilience' program?",
+    "Options": "A) 50\nB) 75\nC) 100\nD) 125\nE) 150",
+    "Answer": "C) 100",
+    "Details": "In Phase-1, the 'Rural Prosperity and Resilience' program will cover 100 developing agridistricts, incorporating global and domestic best practices and seeking assistance from multilateral development banks."
+  },
+  {
+    "Question": "Which central agencies are designated to procure Tur, Urad, and Masoor pulses under the new mission?",
+    "Options": "A) FCI and NABARD\nB) NAFED and NCCF\nC) ICAR and IFFCO\nD) APEDA and SFAC\nE) TRIFED and NCDC",
+    "Answer": "B) NAFED and NCCF",
+    "Details": "The National Agricultural Cooperative Marketing Federation of India (NAFED) and the National Cooperative Consumers' Federation of India (NCCF) are the central agencies designated to procure Tur, Urad, and Masoor pulses from registered farmers as part of the mission to achieve self-reliance in pulses."
+  },
+  {
+    "Question": "What is the objective of the Comprehensive Programme for Vegetables & Fruits?",
+    "Options": "A) To promote organic certification of produce\nB) To enhance production, supply efficiency, processing, and ensure remunerative prices for farmers\nC) To subsidize chemical fertilizers for vegetable and fruit farmers\nD) To establish cold storage facilities in urban areas\nE) To import exotic vegetable and fruit varieties",
+    "Answer": "B) To enhance production, supply efficiency, processing, and ensure remunerative prices for farmers",
+    "Details": "The Comprehensive Programme for Vegetables & Fruits aims to promote production, efficient supply chains, processing, and ensure remunerative prices for farmers. This initiative will be implemented in partnership with states, involving farmer producer organizations and cooperatives."
+  },
+  {
+    "Question": "In which state will the Makhana Board be established to improve production and marketing of makhana?",
+    "Options": "A) West Bengal\nB) Uttar Pradesh\nC) Bihar\nD) Odisha\nE) Assam",
+    "Answer": "C) Bihar",
+    "Details": "A Makhana Board will be established in Bihar to enhance the production, processing, value addition, and marketing of makhana. The board will organize stakeholders into farmer producer organizations and provide support to farmers."
+  },
+  {
+    "Question": "What are the key objectives of the National Mission on High Yielding Seeds?",
+    "Options": "A) Developing genetically modified crops\nB) Strengthening research, developing high-yield, pest-resistant, and climate-resilient seeds, and making over 100 new seed varieties commercially available\nC) Promoting traditional seed varieties\nD) Reducing the use of fertilizers and pesticides\nE) Encouraging seed imports",
+    "Answer": "B) Strengthening research, developing high-yield, pest-resistant, and climate-resilient seeds, and making over 100 new seed varieties commercially available",
+    "Details": "The National Mission on High Yielding Seeds aims to strengthen the research ecosystem, develop and propagate seeds with high yield, pest resistance, and climate resilience, and ensure the commercial availability of more than 100 seed varieties released since July 2024."
+  },
+  {
+    "Question": "What is the focus of the new framework for sustainable harnessing of fisheries?",
+    "Options": "A) Inland freshwater aquaculture\nB) Fisheries in Indian Exclusive Economic Zone and High Seas, especially around Andaman & Nicobar and Lakshadweep Islands\nC) Establishing fish processing units in urban areas\nD) Importing advanced fishing technologies\nE) Promoting ornamental fish breeding",
+    "Answer": "B) Fisheries in Indian Exclusive Economic Zone and High Seas, especially around Andaman & Nicobar and Lakshadweep Islands",
+    "Details": "The government plans to introduce an enabling framework for sustainable harnessing of fisheries from the Indian Exclusive Economic Zone and High Seas, with a special focus on the Andaman & Nicobar and Lakshadweep Islands, to unlock the untapped potential of the marine sector."
+  },
+  {
+    "Question": "What is the duration of the 'Mission for Cotton Productivity' announced in the budget?",
+    "Options": "A) 3 years\nB) 4 years\nC) 5 years\nD) 6 years\nE) 7 years",
+    "Answer": "C) 5 years",
+    "Details": "The 'Mission for Cotton Productivity' is a five-year initiative aimed at improving the productivity and sustainability of cotton farming, promoting extra-long staple cotton varieties, and providing scientific and technological support to farmers."
+  },
+  {
+    "Question": "To what amount has the loan limit under the Modified Interest Subvention Scheme been enhanced for loans taken through the Kisan Credit Card (KCC)?",
+    "Options": "A) ₹2 lakh\nB) ₹3 lakh\nC) ₹4 lakh\nD) ₹5 lakh\nE) ₹6 lakh",
+    "Answer": "D) ₹5 lakh",
+    "Details": "The loan limit under the Modified Interest Subvention Scheme for loans taken through the Kisan Credit Card (KCC) has been enhanced from ₹3 lakh to ₹5 lakh, benefiting 7.7 crore farmers, fishermen, and dairy farmers by facilitating short-term loans."
+  },
+  {
+    "Question": "Where is the new urea plant with an annual capacity of 12.7 lakh metric tons proposed to be set up?",
+    "Options": "A) Namrup, Assam\nB) Ranchi, Jharkhand\nC) Patna, Bihar\nD) Rajpur, Chhattisgarh\nE) Bhubaneswar, Odisha",
+    "Answer": "A) Namrup, Assam",
+    "Details": "To achieve self-reliance in urea production, the government plans to set up a new urea plant with an annual capacity of 12.7 lakh metric tons at Namrup in Assam, further augmenting urea supply in the country."
+  },
+  {
+    "Question": "What is the revised investment limit for MSME classification as per the Budget 2025-26?",
+    "Options": "A) 1.5 times the previous limit\nB) 2 times the previous limit\nC) 2.5 times the previous limit\nD) 3 times the previous limit\nE) No change in the investment limit",
+    "Answer": "C) 2.5 times the previous limit",
+    "Details": "To help MSMEs achieve higher efficiencies of scale, technological upgradation, and better access to capital, the investment and turnover limits for classification of all MSMEs have been enhanced to 2.5 times and 2 times, respectively."
+  },
+  {
+    "Question": "How much additional credit is expected to be generated for Micro and Small Enterprises with the enhanced credit guarantee cover?",
+    "Options": "A) ₹1 lakh crore\nB) ₹1.5 lakh crore\nC) ₹2 lakh crore\nD) ₹2.5 lakh crore\nE) ₹3 lakh crore",
+    "Answer": "B) ₹1.5 lakh crore",
+    "Details": "The credit guarantee cover for Micro and Small Enterprises has been enhanced from ₹5 crore to ₹10 crore, leading to an expected additional credit of ₹1.5 lakh crore in the next five years."
+  },
+  {
+    "Question": "What is the loan limit for the customized Credit Cards introduced for micro enterprises registered on the Udyam portal?",
+    "Options": "A) ₹2 lakh\nB) ₹3 lakh\nC) ₹4 lakh\nD) ₹5 lakh\nE) ₹6 lakh",
+    "Answer": "D) ₹5 lakh",
+    "Details": "The government will introduce customized Credit Cards with a ₹5 lakh limit for micro enterprises registered on the Udyam portal. In the first year, 10 lakh such cards will be issued."
+  },
+  {
+    "Question": "What is the new Fund of Funds' contribution announced for startups?",
+    "Options": "A) ₹5,000 crore\nB) ₹7,500 crore\nC) ₹10,000 crore\nD) ₹12,500 crore\nE) ₹15,000 crore",
+    "Answer": "C) ₹10,000 crore",
+    "Details": "A new Fund of Funds, with expanded scope and a fresh contribution of ₹10,000 crore, will be set up to support startups."
+  },
+  {
+    "Question": "Which sectors are targeted by the new scheme for first-time entrepreneurs?",
+    "Options": "A) Technology and Healthcare\nB) Agriculture and Manufacturing\nC) Women, Scheduled Castes, and Scheduled Tribes\nD) Education and Tourism\nE) Energy and Infrastructure",
+    "Answer": "C) Women, Scheduled Castes, and Scheduled Tribes",
+    "Details": "A new scheme will be launched for 5 lakh women, Scheduled Castes, and Scheduled Tribes first-time entrepreneurs, providing term loans up to ₹2 crore during the next five years."
+  },
+  {
+    "Question": "What is the expected employment generation from the focus product scheme for the footwear and leather sectors?",
+    "Options": "A) 10 lakh persons\nB) 15 lakh persons\nC) 20 lakh persons\nD) 22 lakh persons\nE) 25 lakh persons",
+    "Answer": "D) 22 lakh persons",
+    "Details": "The focus product scheme for the footwear and leather sectors is expected to facilitate employment for 22 lakh persons, generate a turnover of ₹4 lakh crore, and exports of over ₹1.1 lakh crore."
+  },
+  {
+    "Question": "What is the main goal of the scheme to make India a global hub for toys?",
+    "Options": "A) Increase toy imports\nB) Develop clusters, skills, and a manufacturing ecosystem for high-quality, innovative, and sustainable toys\nC) Promote traditional toy-making methods exclusively\nD) Establish toy museums across the country\nE) Provide subsidies for toy retailers",
+    "Answer": "B) Develop clusters, skills, and a manufacturing ecosystem for high-quality, innovative, and sustainable toys",
+    "Details": "The scheme aims to make India a global hub for toys by focusing on the development of clusters, skills, and a manufacturing ecosystem to create high-quality, unique, innovative, and sustainable toys representing the 'Made in India' brand."
+  },
+  {
+    "Question": "What is the theme of the Union Budget 2025-26?",
+    "Options": "A) Digital India\nB) Make in India\nC) Sabka Vikas\nD) Skill India\nE) Startup India",
+    "Answer": "C) Sabka Vikas",
+    "Details": "The Union Budget 2025-26 is presented with the theme 'Sabka Vikas,' stimulating balanced growth of all regions."
+  },
+  {
+    "Question": "What is the new income tax exemption limit for salaried individuals under the new income tax regime?",
+    "Options": "A) ₹10 lakh per annum\nB) ₹11 lakh per annum\nC) ₹12 lakh per annum\nD) ₹13 lakh per annum\nE) ₹14 lakh per annum",
+    "Answer": "C) ₹12 lakh per annum",
+    "Details": "The Union Budget 2025-26 proposes new direct tax slabs and rates under the new income tax regime, so that no income tax is needed to be paid for total income up to ₹12 lakh per annum, i.e., an average income of ₹1 lakh per month, other than special rate income such as Capital Gain."
+  },
+  {
+    "Question": "How much is the standard deduction for salaried individuals earning up to ₹12.75 lakh per annum?",
+    "Options": "A) ₹50,000\nB) ₹60,000\nC) ₹70,000\nD) ₹75,000\nE) ₹80,000",
+    "Answer": "D) ₹75,000",
+    "Details": "Salaried individuals earning up to ₹12.75 lakh per annum will pay NIL tax due to a standard deduction of ₹75,000 under the new income tax regime proposed in the Union Budget 2025-26."
+  },
+  {
+    "Question": "Which clean technologies are supported under the National Manufacturing Mission to promote 'Make in India'?",
+    "Options": "A) Solar PV cells and EV batteries\nB) Wind turbines and grid-scale batteries\nC) Very high voltage transmission equipment\nD) Electrolyzers and motors and controllers\nE) All of the above",
+    "Answer": "E) All of the above",
+    "Details": "The National Manufacturing Mission includes support for clean technologies such as solar photovoltaic (PV) cells, electric vehicle (EV) batteries, wind turbines, grid-scale batteries, very high voltage transmission equipment, electrolyzers, and motors and controllers. This initiative aims to improve domestic value addition and build a robust ecosystem for these technologies in line with the 'Make in India' campaign."
+  },
+  {
+    "Question": "What is the enhanced loan limit under the Modified Interest Subvention Scheme for Kisan Credit Cards (KCC) as proposed in the Budget 2025-26?",
+    "Options": "A) ₹2 lakh\nB) ₹3 lakh\nC) ₹4 lakh\nD) ₹5 lakh\nE) ₹6 lakh",
+    "Answer": "D) ₹5 lakh",
+    "Details": "The Budget 2025-26 proposes enhancing the loan limit under the Modified Interest Subvention Scheme for Kisan Credit Cards (KCC) from ₹3 lakh to ₹5 lakh. This increase aims to facilitate short-term loans for 7.7 crore farmers, fishermen, and dairy farmers, thereby providing them with greater financial support."
+  },
+  {
+    "Question": "What is the primary goal of the 'Mission for Cotton Productivity' announced in the Budget 2025-26?",
+    "Options": "A) To reduce cotton exports\nB) To increase the import of extra-long staple cotton\nC) To improve productivity and sustainability of cotton farming and promote extra-long staple cotton varieties\nD) To decrease the area under cotton cultivation\nE) To focus solely on organic cotton farming",
+    "Answer": "C) To improve productivity and sustainability of cotton farming and promote extra-long staple cotton varieties",
+    "Details": "The 'Mission for Cotton Productivity' is a five-year initiative aimed at facilitating significant improvements in the productivity and sustainability of cotton farming. It also focuses on promoting extra-long staple cotton varieties. The mission seeks to provide scientific and technological support to farmers, increase their incomes, and ensure a steady supply of quality cotton for India's traditional textile sector."
+  },
+  {
+    "Question": "What is the proposed enhancement in the credit guarantee cover for Micro and Small Enterprises as per the Budget 2025-26?",
+    "Options": "A) From ₹2 crore to ₹4 crore\nB) From ₹3 crore to ₹6 crore\nC) From ₹5 crore to ₹10 crore\nD) From ₹7 crore to ₹14 crore\nE) From ₹10 crore to ₹20 crore",
+    "Answer": "C) From ₹5 crore to ₹10 crore",
+    "Details": "To improve access to credit for Micro and Small Enterprises, the Budget 2025-26 proposes enhancing the credit guarantee cover from ₹5 crore to ₹10 crore. This measure is expected to lead to additional credit of ₹1.5 lakh crore over the next five years, thereby supporting the growth and development of these enterprises."
+  },
+  {
+    "Question": "How many customized Credit Cards with a ₹5 lakh limit are planned to be issued for micro enterprises registered on the Udyam portal in the first year?",
+    "Options": "A) 1 lakh\nB) 5 lakh\nC) 10 lakh\nD) 15 lakh\nE) 20 lakh",
+    "Answer": "C) 10 lakh",
+    "Details": "The Budget 2025-26 introduces customized Credit Cards with a ₹5 lakh limit for micro enterprises registered on the Udyam portal. In the first year, the government plans to issue 10 lakh such cards to support micro enterprises in accessing credit and enhancing their business operations."
+  },
+  {
+    "Question": "What is the new Fund of Funds announced in the Budget 2025-26 intended to support?",
+    "Options": "A) Large multinational corporations\nB) Traditional retail businesses\nC) Startups with a focus on innovation and technology\nD) Real estate development projects\nE) Import of foreign goods",
+    "Answer": "C) Startups with a focus on innovation and technology",
+    "Details": "Building on the success of existing Alternate Investment Funds (AIFs) for startups, the Budget 2025-26 announces a new Fund of Funds with an expanded scope and a fresh contribution of ₹10,000 crore. This fund aims to support startups, particularly those focusing on innovation and technology, by providing them with necessary financial resources to scale their operations."
+  },
+  {
+    "Question": "What is the objective of the new scheme for first-time entrepreneurs from women, Scheduled Castes, and Scheduled Tribes announced in the Budget 2025-26?",
+    "Options": "A) To provide grants for purchasing luxury goods\nB) To offer term loans up to ₹2 crore over the next five years\nC) To subsidize foreign travel for business purposes\nD) To fund real estate investments\nE) To support only existing large enterprises",
+    "Answer": "B) To offer term loans up to ₹2 crore over the next five years",
+    "Details": "The Budget 2025-26 introduces a new scheme aimed at supporting 5 lakh first-time entrepreneurs from women, Scheduled Castes, and Scheduled Tribes. The scheme will provide term loans up to ₹2 crore over the next five years and will include online capacity building for entrepreneurship and managerial skills, thereby promoting inclusive growth and economic empowerment among these groups."
+  },
+  {
+    "Question": "How does the Budget 2025-26 propose to support Micro, Small, and Medium Enterprises (MSMEs) in terms of credit availability?",
+    "Options": "A) By reducing interest rates for all loans\nB) By enhancing the credit guarantee cover from ₹5 crore to ₹10 crore\nC) By providing direct subsidies to MSMEs\nD) By offering tax exemptions to all MSMEs\nE) By increasing import duties on MSME products",
+    "Answer": "B) By enhancing the credit guarantee cover from ₹5 crore to ₹10 crore",
+    "Details": "To improve access to credit for Micro and Small Enterprises, the Budget 2025-26 proposes enhancing the credit guarantee cover from ₹5 crore to ₹10 crore. This measure is expected to lead to additional credit of ₹1.5 lakh crore over the next five years, thereby supporting the growth and development of MSMEs."
+  },
+  {
+    "Question": "What is the focus of the new scheme for first-time entrepreneurs announced in the Budget 2025-26?",
+    "Options": "A) Providing grants to large corporations\nB) Offering term loans up to ₹2 crore to 5 lakh women, Scheduled Castes, and Scheduled Tribes first-time entrepreneurs over the next five years\nC) Reducing taxes for established businesses\nD) Promoting foreign investments in startups\nE) Centralizing entrepreneurial activities in urban areas",
+    "Answer": "B) Offering term loans up to ₹2 crore to 5 lakh women, Scheduled Castes, and Scheduled Tribes first-time entrepreneurs over the next five years",
+    "Details": "The government plans to launch a new scheme targeting first-time entrepreneurs, specifically benefiting 5 lakh women, Scheduled Castes, and Scheduled Tribes individuals. The scheme will provide term loans up to ₹2 crore over the next five years and will incorporate lessons from the successful Stand-Up India scheme. Additionally, online capacity building for entrepreneurship and managerial skills will be organized to support these entrepreneurs."
+  },
+  {
+    "Question": "What is the aim of the 'Focus Product Scheme' for the footwear and leather sectors introduced in the Budget 2025-26?",
+    "Options": "A) To reduce the production of non-leather footwear\nB) To support design capacity, component manufacturing, and machinery required for production of non-leather and leather footwear and products\nC) To increase import duties on leather\nD) To centralize footwear manufacturing in urban areas\nE) To promote the export of raw leather",
+    "Answer": "B) To support design capacity, component manufacturing, and machinery required for production of non-leather and leather footwear and products",
+    "Details": "The 'Focus Product Scheme' aims to enhance the productivity, quality, and competitiveness of India's footwear and leather sector. The scheme will support design capacity, component manufacturing, and the necessary machinery for producing both non-leather and leather footwear and products. It is expected to facilitate employment for 22 lakh individuals, generate a turnover of ₹4 lakh crore, and achieve exports exceeding ₹1.1 lakh crore."
+  },
+  {
+    "Question": "What is the primary focus of the 'Prime Minister Dhan-Dhaanya Krishi Yojana'?",
+    "Options": "A) Providing free seeds to farmers\nB) Developing 100 districts with low productivity\nC) Subsidizing fertilizers for all crops\nD) Promoting urban agriculture\nE) Exporting surplus agricultural produce",
+    "Answer": "B) Developing 100 districts with low productivity",
+    "Details": "The 'Prime Minister Dhan-Dhaanya Krishi Yojana' aims to enhance agricultural productivity by targeting 100 districts characterized by low productivity, moderate crop intensity, and below-average credit parameters. The program focuses on improving various aspects such as crop diversification, sustainable practices, post-harvest storage, irrigation facilities, and credit availability to benefit approximately 1.7 crore farmers."
+  },
+  {
+    "Question": "What is the purpose of establishing a urea plant in Namrup, Assam?",
+    "Options": "A) To import urea from neighboring countries\nB) To achieve self-reliance in urea production\nC) To export urea to international markets\nD) To reduce urea usage in farming\nE) To research alternative fertilizers",
+    "Answer": "B) To achieve self-reliance in urea production",
+    "Details": "The establishment of a urea plant in Namrup, Assam, with an annual capacity of 12.7 lakh metric tons, is part of the government's efforts to achieve self-reliance in urea production. This initiative follows the reopening of three dormant urea plants in the Eastern region, aiming to augment domestic urea supply and reduce dependence on imports."
+  },
+  {
+    "Question": "How will India Post be repositioned to act as a catalyst for the rural economy?",
+    "Options": "A) By reducing the number of rural post offices\nB) By focusing solely on mail delivery services\nC) By expanding financial and logistics services in rural areas\nD) By privatizing postal services\nE) By limiting services to urban areas",
+    "Answer": "C) By expanding financial and logistics services in rural areas",
+    "Details": "India Post, with its extensive network of 1.5 lakh rural post offices and 2.4 lakh Dak Sevaks, complemented by the India Post Payment Bank, will be repositioned to act as a catalyst for the rural economy. This involves expanding financial services and transforming into a large public logistics organization to meet the rising needs of various stakeholders, including artisans, entrepreneurs, women, self-help groups, MSMEs, and large businesses."
+  },
+  {
+    "Question": "Which of the following is NOT listed as one of the four powerful engines of development in the budget?",
+    "Options": "A) Agriculture\nB) MSME\nC) Investment\nD) Exports\nE) Tourism",
+    "Answer": "E) Tourism",
+    "Details": "The budget identifies four powerful engines of development: Agriculture, MSME, Investment, and Exports. Tourism, while important, is not listed among these four."
+  },
+  {
+    "Question": "What is the duration of the 'Mission for Aatmanirbharta in Pulses' launched by the government?",
+    "Options": "A) 3 years\nB) 4 years\nC) 5 years\nD) 6 years\nE) 7 years",
+    "Answer": "D) 6 years",
+    "Details": "The government has launched a 6-year 'Mission for Aatmanirbharta in Pulses' with a special focus on Tur, Urad, and Masoor to achieve self-reliance in pulse production."
+  },
+  {
+    "Question": "Which organization will be established in Bihar to improve the production and marketing of Makhana?",
+    "Options": "A) Makhana Development Authority\nB) Makhana Promotion Council\nC) Makhana Board\nD) Makhana Farmers Association\nE) Makhana Cooperative Society",
+    "Answer": "C) Makhana Board",
+    "Details": "A Makhana Board will be established in Bihar to improve production, processing, value addition, and marketing of Makhana, benefiting local farmers and promoting this unique produce."
+  },
+  {
+    "Question": "How many Atal Tinkering Labs are planned to be set up in government schools over the next five years?",
+    "Options": "A) 10,000\nB) 25,000\nC) 50,000\nD) 75,000\nE) 1,00,000",
+    "Answer": "C) 50,000",
+    "Details": "The government aims to establish 50,000 Atal Tinkering Labs in government schools over the next five years to promote innovation and scientific temperament among students."
+  },
+  {
+    "Question": "Within what timeframe is the High-Level Committee for Regulatory Reforms expected to make its recommendations?",
+    "Options": "A) Six months\nB) One year\nC) Two years\nD) Eighteen months\nE) Five years",
+    "Answer": "B) One year",
+    "Details": "The committee is expected to make its recommendations within one year to strengthen trust-based economic governance and enhance 'ease of doing business'."
+  },
+  {
+    "Question": "What initiative will be launched in 2025 to promote competitive cooperative federalism among states?",
+    "Options": "A) State Development Fund\nB) Investment Friendliness Index of States\nC) National Economic Council\nD) State Performance Grants\nE) Federal Investment Program",
+    "Answer": "B) Investment Friendliness Index of States",
+    "Details": "The Investment Friendliness Index of States will be launched in 2025 to further the spirit of competitive cooperative federalism, encouraging states to improve their investment climates."
+  },
+  {
+    "Question": "Under which council will a mechanism be set up to evaluate the impact of current financial regulations as per the Union Budget 2025-26?",
+    "Options": "A) National Development Council\nB) Financial Stability and Development Council (FSDC)\nC) Economic Advisory Council\nD) Central Economic Committee\nE) National Financial Regulatory Authority",
+    "Answer": "B) Financial Stability and Development Council (FSDC)",
+    "Details": "A mechanism will be set up under the Financial Stability and Development Council (FSDC) to evaluate the impact of current financial regulations and subsidiary instructions, aiming to enhance their responsiveness and development of the financial sector."
+  },
+  {
+    "Question": "What is the purpose of the proposed Jan Vishwas Bill 2.0 in the Union Budget 2025-26?",
+    "Options": "A) To introduce new taxes\nB) To decriminalize more than 100 provisions in various laws\nC) To increase penalties for corporate offenses\nD) To nationalize private enterprises\nE) To centralize state powers",
+    "Answer": "B) To decriminalize more than 100 provisions in various laws",
+    "Details": "The Jan Vishwas Bill 2.0 aims to decriminalize more than 100 provisions in various laws, continuing the government's efforts to enhance 'ease of doing business' by reducing legal hurdles."
+  },
+  {
+    "Question": "What is the Revised Estimate of the total receipts other than borrowings for the fiscal year 2024-25?",
+    "Options": "A) ₹25.57 lakh crore\nB) ₹31.47 lakh crore\nC) ₹47.16 lakh crore\nD) ₹10.18 lakh crore\nE) ₹50.65 lakh crore",
+    "Answer": "B) ₹31.47 lakh crore",
+    "Details": "The Revised Estimate of the total receipts other than borrowings for 2024-25 is ₹31.47 lakh crore, indicating the government's revenue expectations excluding borrowed funds."
+  },
+  {
+    "Question": "What is the Revised Estimate of the fiscal deficit as a percentage of GDP for 2024-25?",
+    "Options": "A) 3.5%\nB) 4.0%\nC) 4.8%\nD) 5.2%\nE) 5.5%",
+    "Answer": "C) 4.8%",
+    "Details": "The Revised Estimate of the fiscal deficit for 2024-25 is 4.8% of GDP, reflecting the gap between the government's total expenditure and its total receipts (excluding borrowings)."
+  },
+  {
+    "Question": "For the fiscal year 2025-26, what is the estimated total expenditure as per the Union Budget 2025-26?",
+    "Options": "A) ₹34.96 lakh crore\nB) ₹50.65 lakh crore\nC) ₹28.37 lakh crore\nD) ₹47.16 lakh crore\nE) ₹31.47 lakh crore",
+    "Answer": "B) ₹50.65 lakh crore",
+    "Details": "The estimated total expenditure for the fiscal year 2025-26 is ₹50.65 lakh crore."
+  },
+  {
+    "Question": "What is the estimated fiscal deficit as a percentage of GDP for the fiscal year 2025-26?",
+    "Options": "A) 3.5%\nB) 4.0%\nC) 4.4%\nD) 4.8%\nE) 5.0%",
+    "Answer": "C) 4.4%",
+    "Details": "The fiscal deficit for 2025-26 is estimated to be 4.4% of GDP, indicating the government's commitment to fiscal consolidation by reducing the deficit from the previous year's estimate of 4.8%."
+  },
+  {
+    "Question": "What is the proposed net market borrowing from dated securities to finance the fiscal deficit in 2025-26?",
+    "Options": "A) ₹10.18 lakh crore\nB) ₹11.54 lakh crore\nC) ₹14.82 lakh crore\nD) ₹28.37 lakh crore\nE) ₹31.47 lakh crore",
+    "Answer": "B) ₹11.54 lakh crore",
+    "Details": "To finance the fiscal deficit, the net market borrowings from dated securities are estimated at ₹11.54 lakh crore for the fiscal year 2025-26."
+  },
+  {
+    "Question": "What is the increased threshold for TDS on rent as per the Union Budget 2025-26?",
+    "Options": "A) ₹2.4 lakh\nB) ₹3 lakh\nC) ₹4 lakh\nD) ₹5 lakh\nE) ₹6 lakh",
+    "Answer": "E) ₹6 lakh",
+    "Details": "The threshold for TDS on rent has been increased from ₹2.4 lakh to ₹6 lakh per annum, aiming to simplify tax compliance for individuals paying higher rents."
+  },
+  {
+    "Question": "What is the new time limit for filing updated income tax returns as extended in the Union Budget 2025-26?",
+    "Options": "A) Two years\nB) Three years\nC) Four years\nD) Five years\nE) Six years",
+    "Answer": "C) Four years",
+    "Details": "The time limit for filing updated income tax returns has been extended from the current two years to four years, providing taxpayers with a longer window to correct or update their returns."
+  },
+  {
+    "Question": "Which type of remittance is now exempt from TCS under the new provisions?",
+    "Options": "A) Foreign travel\nB) Education loans\nC) Medical treatment\nD) Investment in foreign stocks\nE) Real estate purchase",
+    "Answer": "B) Education loans",
+    "Details": "TCS on remittances for education purposes is removed when the remittance is made from a loan taken from a specified financial institution."
+  },
+  {
+    "Question": "Under the new proposal, how long will small charitable trusts/institutions be registered?",
+    "Options": "A) 3 years\nB) 5 years\nC) 7 years\nD) 10 years\nE) 12 years",
+    "Answer": "D) 10 years",
+    "Details": "The registration period for small charitable trusts has been increased from 5 years to 10 years to reduce compliance burden."
+  },
+  {
+    "Question": "What is the block period for determining the arm's length price of international transactions under the new transfer pricing scheme?",
+    "Options": "A) 1 year\nB) 2 years\nC) 3 years\nD) 4 years\nE) 5 years",
+    "Answer": "C) 3 years",
+    "Details": "A scheme for determining arm’s length price of international transactions for a block period of three years has been introduced."
+  },
+  {
+    "Question": "The new presumptive taxation regime benefits which industry?",
+    "Options": "A) Real estate\nB) Electronics manufacturing\nC) Pharmaceuticals\nD) Automobile sector\nE) E-commerce",
+    "Answer": "B) Electronics manufacturing",
+    "Details": "A presumptive taxation regime has been introduced for non-residents providing services to electronics manufacturing companies."
+  },
+  {
+    "Question": "The tonnage tax scheme has now been extended to which type of vessels?",
+    "Options": "A) Sea-going ships only\nB) Inland vessels\nC) Fishing boats\nD) Oil tankers\nE) Passenger cruise ships",
+    "Answer": "B) Inland vessels",
+    "Details": "The benefits of the tonnage tax scheme have been extended to inland vessels registered under the Indian Vessels Act, 2021."
+  },
+  {
+    "Question": "What is the new cut-off date for IFSC entities to claim benefits?",
+    "Options": "A) 31st March 2025\nB) 31st March 2027\nC) 31st March 2028\nD) 31st March 2030\nE) 31st March 2035",
+    "Answer": "D) 31st March 2030",
+    "Details": "The cut-off date for IFSC units to claim tax benefits has been extended by five years to 31st March 2030."
+  },
+  {
+    "Question": "What tax benefit has been provided to senior citizens holding old National Savings Scheme (NSS) accounts?",
+    "Options": "A) Additional interest benefits\nB) Exemption on withdrawals\nC) Higher withdrawal limits\nD) Tax-free status for interest earned\nE) Tax rebate up to ₹1 lakh",
+    "Answer": "B) Exemption on withdrawals",
+    "Details": "Withdrawals from old NSS accounts by senior citizens on or after 29th August 2024 are now tax-exempt."
+  },
+  {
+    "Question": "Which category of investment funds is provided with certainty of taxation on gains from securities?",
+    "Options": "A) Hedge funds\nB) Sovereign wealth funds\nC) Category I & II AIFs\nD) Pension funds\nE) Venture capital funds",
+    "Answer": "C) Category I & II AIFs",
+    "Details": "Category I and II Alternative Investment Funds (AIFs) investing in infrastructure and other sectors now have taxation certainty."
+  },
+  {
+    "Question": "What is the extended deadline for Sovereign Wealth and Pension Funds to invest in infrastructure?",
+    "Options": "A) 31st March 2025\nB) 31st March 2027\nC) 31st March 2028\nD) 31st March 2030\nE) 31st March 2035",
+    "Answer": "D) 31st March 2030",
+    "Details": "The deadline for Sovereign Wealth and Pension Funds to invest in infrastructure has been extended by five years to 31st March 2030."
+  },
+  {
+    "Question": "What change has been made to the higher TDS deduction provision?",
+    "Options": "A) It will apply only in cases where PAN is not available\nB) It will apply to all transactions above ₹10 lakh\nC) It will be replaced by a flat tax deduction\nD) It has been abolished\nE) It will now apply only to capital gains",
+    "Answer": "A) It will apply only in cases where PAN is not available",
+    "Details": "The higher TDS deduction provision will now apply only in cases where PAN is not provided."
+  },
+  {
+    "Question": "What relaxation has been proposed for TCS provisions regarding delayed payment?",
+    "Options": "A) Interest on late payment has been reduced\nB) Delay up to the due date of filing is decriminalized\nC) TCS on foreign remittances is waived for small taxpayers\nD) No penalty on late payment for transactions below ₹1 lakh\nE) Delay of up to 3 months is now exempt from penalty",
+    "Answer": "B) Delay up to the due date of filing is decriminalized",
+    "Details": "Similar to TDS, TCS payment delay up to the due date of filing the statement has been decriminalized."
+  },
+  {
+    "Question": "Which of the following statements about self-occupied property taxation is correct?",
+    "Options": "A) Taxpayers can now claim three self-occupied properties as tax-free\nB) Only salaried individuals can claim two self-occupied properties\nC) The limit of two self-occupied properties without tax has been removed\nD) Two self-occupied properties can now be claimed tax-free without any conditions\nE) Tax-free self-occupied property benefit is only for senior citizens",
+    "Answer": "D) Two self-occupied properties can now be claimed tax-free without any conditions",
+    "Details": "Earlier, conditions applied for self-occupied property tax exemption, but now two properties can be claimed as nil annual value without any conditions."
+  },
+  {
+    "Question": "What has been announced regarding the digitization of appellate orders?",
+    "Options": "A) Paper-based processing will continue for complex cases\nB) Full digitization of appellate orders in the next two years\nC) Only tax refunds will be processed digitally\nD) E-filing of appellate orders will be optional\nE) Taxpayers must visit tax offices for final approval",
+    "Answer": "B) Full digitization of appellate orders in the next two years",
+    "Details": "The government has announced that all appellate order processes will be digitized and made paperless over the next two years."
+  },
+  {
+    "Question": "Which step has been taken to reduce litigation in international taxation?",
+    "Options": "A) Introduction of new dispute resolution tribunals\nB) Expansion of Safe Harbour Rules\nC) Introduction of global minimum tax\nD) Abolition of double taxation avoidance agreements\nE) Automatic exemption for foreign investors",
+    "Answer": "B) Expansion of Safe Harbour Rules",
+    "Details": "The scope of Safe Harbour Rules is being expanded to reduce litigation and provide certainty in international taxation."
+  },
+  {
+    "Question": "What tax benefit has been extended to inland water transport?",
+    "Options": "A) Complete tax exemption for inland shipping companies\nB) Lower customs duty on imported vessels\nC) Extension of the Tonnage Tax Scheme to inland vessels\nD) 50% subsidy for fuel costs\nE) No GST on transport of goods via inland waterways",
+    "Answer": "C) Extension of the Tonnage Tax Scheme to inland vessels",
+    "Details": "The Tonnage Tax Scheme, earlier available only for sea-going ships, has now been extended to inland vessels."
+  },
+  {
+    "Question": "According to the IMF, what is the projected global growth rate for 2024?",
+    "Options": "A) 2.5%\nB) 3.2%\nC) 3.5%\nD) 4.0%\nE) 4.2%",
+    "Answer": "B) 3.2%",
+    "Details": "The IMF projected global economic growth at 3.2% in 2024 and 3.3% in 2025, with manufacturing slowing due to supply chain disruptions."
+  },
+  {
+    "Question": "What is the projected GDP growth rate for India in FY26 (2025-26)?",
+    "Options": "A) 5.8% - 6.3%\nB) 6.0% - 6.5%\nC) 6.3% - 6.8%\nD) 7.0% - 7.5%\nE) 7.5% - 8.0%",
+    "Answer": "C) 6.3% - 6.8%",
+    "Details": "India’s GDP is expected to grow between 6.3% - 6.8% in FY26, with real GVA estimated at 6.4% in FY25."
+  },
+  {
+    "Question": "What is India’s Current Account Deficit (CAD) as a percentage of GDP in FY25?",
+    "Options": "A) 0.5%\nB) 1.2%\nC) 1.5%\nD) 2.0%\nE) 2.5%",
+    "Answer": "B) 1.2%",
+    "Details": "India’s CAD is projected to be 1.2% of GDP in FY25, supported by strong remittance inflows."
+  },
+  {
+    "Question": "What is India’s Foreign Exchange Reserve as of December 2024?",
+    "Options": "A) USD 580.2 billion\nB) USD 600.5 billion\nC) USD 620.8 billion\nD) USD 640.3 billion\nE) USD 660.0 billion",
+    "Answer": "D) USD 640.3 billion",
+    "Details": "India’s Forex reserves stood at USD 640.3 billion, covering 90% of external debt."
+  },
+  {
+    "Question": "What is the Gross Non-Performing Assets (GNPA) ratio of Scheduled Commercial Banks (SCBs) in 2024?",
+    "Options": "A) 1.5%\nB) 2.6%\nC) 3.2%\nD) 4.0%\nE) 5.5%",
+    "Answer": "B) 2.6%",
+    "Details": "The GNPA ratio of SCBs dropped to a 12-year low of 2.6% in 2024, indicating strong banking health."
+  },
+  {
+    "Question": "What is the RBI’s repo rate as of 2024?",
+    "Options": "A) 5.5%\nB) 6.0%\nC) 6.5%\nD) 7.0%\nE) 7.5%",
+    "Answer": "C) 6.5%",
+    "Details": "The RBI maintained the repo rate at 6.5%, balancing inflation control and growth support."
+  },
+  {
+    "Question": "What monetary policy measure did the RBI take to inject liquidity in 2024?",
+    "Options": "A) Increased CRR\nB) Lowered Repo Rate\nC) Reduced CRR from 4.5% to 4%\nD) Raised SLR to 20%\nE) Increased LAF borrowing limits",
+    "Answer": "C) Reduced CRR from 4.5% to 4%",
+    "Details": "The RBI reduced CRR to 4%, injecting ₹1.16 lakh crore liquidity into the system."
+  },
+  {
+    "Question": "By how much did capital market mobilization grow between April-December 2024?",
+    "Options": "A) 3%\nB) 5%\nC) 7%\nD) 10%\nE) 12%",
+    "Answer": "B) 5%",
+    "Details": "Capital markets raised ₹11.1 lakh crore, a 5% increase over FY24, with IPO fundraising tripling."
+  },
+  {
+    "Question": "What is India’s expected GDP size by FY28 as per the IMF?",
+    "Options": "A) USD 4 trillion\nB) USD 5 trillion\nC) USD 5.5 trillion\nD) USD 6 trillion\nE) USD 6.3 trillion",
+    "Answer": "B) USD 5 trillion",
+    "Details": "The IMF projects India to become a USD 5 trillion economy by FY28 and USD 6.3 trillion by FY30."
+  },
+  {
+    "Question": "What is India’s unemployment rate in FY24?",
+    "Options": "A) 4.2%\nB) 3.8%\nC) 3.2%\nD) 5.0%\nE) 6.0%",
+    "Answer": "C) 3.2%",
+    "Details": "India’s unemployment rate declined from 6% (FY18) to 3.2% (FY24) due to rising employment opportunities."
+  },
+  {
+    "Question": "How many jobs globally are at risk due to AI automation as per the ILO (2024) report?",
+    "Options": "A) 50 million\nB) 75 million\nC) 100 million\nD) 200 million\nE) 300 million",
+    "Answer": "B) 75 million",
+    "Details": "The ILO report (2024) states that 75 million global jobs are at risk due to AI automation."
+  },
+  {
+    "Question": "How many houses were sanctioned under the Pradhan Mantri Awas Yojana (PMAY)?",
+    "Options": "A) 95 lakh\nB) 1.05 crore\nC) 1.18 crore\nD) 1.25 crore\nE) 1.30 crore",
+    "Answer": "C) 1.18 crore",
+    "Details": "The PMAY scheme sanctioned 1.18 crore houses, improving affordable housing in India."
+  },
+  {
+    "Question": "What is the Labour Force Participation Rate (LFPR) for women in FY24?",
+    "Options": "A) 35.2%\nB) 38.5%\nC) 41.7%\nD) 45.0%\nE) 48.2%",
+    "Answer": "C) 41.7%",
+    "Details": "India’s female LFPR increased to 41.7% in FY24, up from 23.3% in 2017-18."
+  },
+  {
+    "Question": "As per the World Intellectual Property Organization (WIPO) Report (2022), where does India rank in patent filings?",
+    "Options": "A) 8th\nB) 7th\nC) 6th\nD) 5th\nE) 4th",
+    "Answer": "C) 6th",
+    "Details": "India ranks 6th globally in patent filings, with resident applications surpassing 55% for the first time."
+  },
+  {
+    "Question": "How much funding was raised via Sovereign Green Bonds (FY24) for India’s green projects?",
+    "Options": "A) ₹10,000 crore\nB) ₹15,000 crore\nC) ₹18,000 crore\nD) ₹20,000 crore\nE) ₹25,000 crore",
+    "Answer": "D) ₹20,000 crore",
+    "Details": "India issued ₹20,000 crore worth of Sovereign Green Bonds in FY24 to fund renewable energy and climate projects."
+  },
+  {
+    "Question": "What is India's Labour Force Participation Rate (LFPR) in FY24?",
+    "Options": "A) 55.2%\nB) 58.5%\nC) 60.1%\nD) 62.4%\nE) 65.0%",
+    "Answer": "C) 60.1%",
+    "Details": "India’s LFPR rose to 60.1% in FY24, reflecting increased workforce participation across sectors."
+  },
+  {
+    "Question": "What is India's projected working-age population (15-59 years) by 2026?",
+    "Options": "A) 900 million\nB) 913.5 million\nC) 923.9 million\nD) 940 million\nE) 965 million",
+    "Answer": "C) 923.9 million",
+    "Details": "India's working-age population is projected to reach 923.9 million by 2026, offering a demographic dividend."
+  },
+  {
+    "Question": "What percentage of India’s workforce is self-employed?",
+    "Options": "A) 45.3%\nB) 50.1%\nC) 55.6%\nD) 58.4%\nE) 60.2%",
+    "Answer": "D) 58.4%",
+    "Details": "Self-employment accounts for 58.4% of India's workforce, while regular wage jobs remain at 21.7%."
+  },
+  {
+    "Question": "Under EPFO, how many net payroll additions were recorded in FY24?",
+    "Options": "A) 91 lakh\nB) 103 lakh\nC) 117 lakh\nD) 131 lakh\nE) 145 lakh",
+    "Answer": "D) 131 lakh",
+    "Details": "EPFO net payroll additions doubled from 61 lakh (FY19) to 131 lakh (FY24), reflecting job creation in the formal sector."
+  },
+  {
+    "Question": "What global geopolitical events affected trade and energy security in 2024?",
+    "Options": "A) Russia-Ukraine war\nB) Israel-Hamas conflict\nC) Red Sea shipping disruptions\nD) Suez Canal blockage\nE) All of the above",
+    "Answer": "E) All of the above",
+    "Details": "The Russia-Ukraine war, Israel-Hamas conflict, and Red Sea disruptions increased shipping costs and energy risks."
+  },
+  {
+    "Question": "What is the biggest challenge for India’s external sector as per the Economic Survey 2024-25?",
+    "Options": "A) Weak global demand\nB) High trade deficit\nC) Protectionism & supply chain disruptions\nD) Overdependence on IT & Services exports\nE) All of the above",
+    "Answer": "E) All of the above",
+    "Details": "India faces trade risks from global demand slowdown, rising protectionism, and IT service export dependency."
+  },
+  {
+    "Question": "India’s logistics costs remain high at what percentage of GDP?",
+    "Options": "A) 8-9%\nB) 10-11%\nC) 12-13%\nD) 13-14%\nE) 15%+",
+    "Answer": "D) 13-14%",
+    "Details": "Despite the National Logistics Policy, India’s logistics costs remain 13-14% of GDP, reducing competitiveness."
+  },
+  {
+    "Question": "What is the biggest financial risk to India's economy as per the Economic Survey 2024-25?",
+    "Options": "A) High state debt burdens\nB) Rising unsecured lending risks\nC) Low credit penetration to MSMEs\nD) High external debt servicing\nE) All of the above",
+    "Answer": "E) All of the above",
+    "Details": "India’s state debt, NBFC lending risks, and MSME credit gaps pose major financial sector challenges."
+  },
+  {
+    "Question": "What percentage of India’s R&D spending is invested in innovation?",
+    "Options": "A) 0.5% of GDP\nB) 0.64% of GDP\nC) 0.8% of GDP\nD) 1.2% of GDP\nE) 1.5% of GDP",
+    "Answer": "B) 0.64% of GDP",
+    "Details": "India’s R&D spending remains low at 0.64% of GDP, affecting tech competitiveness and innovation."
+  },
+  {
+    "Question": "What is the primary energy source in India, despite the shift to renewables?",
+    "Options": "A) Hydropower\nB) Nuclear energy\nC) Solar energy\nD) Coal\nE) Natural gas",
+    "Answer": "D) Coal",
+    "Details": "Coal remains India’s primary energy source, despite renewables reaching 47% of power capacity."
+  },
+  {
+    "Question": "Which initiative aims to reduce dependence on conflict-affected trade regions?",
+    "Options": "A) Belt & Road Initiative\nB) Indo-Pacific Economic Framework\nC) Regional Comprehensive Economic Partnership (RCEP)\nD) ASEAN-India Free Trade Agreement\nE) None of the above",
+    "Answer": "B) Indo-Pacific Economic Framework",
+    "Details": "The Indo-Pacific Economic Framework (IPEF) aims to diversify India's trade partners and reduce geopolitical risks."
+  },
+  {
+    "Question": "Which sector requires faster AI adoption & workforce upskilling?",
+    "Options": "A) IT & BPO\nB) Banking & Financial Services\nC) Manufacturing\nD) Healthcare\nE) All of the above",
+    "Answer": "E) All of the above",
+    "Details": "AI automation will impact IT, banking, healthcare, and manufacturing, requiring urgent workforce upskilling."
+  },
+  {
+    "Question": "What percentage of India's workforce is employed in the formal sector?",
+    "Options": "A) 12.5%\nB) 15.8%\nC) 18.2%\nD) 21.7%\nE) 25.3%",
+    "Answer": "D) 21.7%",
+    "Details": "21.7% of India’s workforce is in formal employment, while self-employment remains high at 58.4%."
+  },
+  {
+    "Question": "What is the expected growth rate of India’s AI market by 2027?",
+    "Options": "A) 15-20% CAGR\nB) 20-25% CAGR\nC) 25-30% CAGR\nD) 25-35% CAGR\nE) 35-40% CAGR",
+    "Answer": "D) 25-35% CAGR",
+    "Details": "India’s AI market is projected to grow at 25-35% CAGR by 2027, requiring upskilling and regulatory oversight."
+  },
+  {
+    "Question": "What is the main reason for India’s persistent food inflation?",
+    "Options": "A) Global fuel price fluctuations\nB) Erratic monsoons and weather disruptions\nC) Trade restrictions\nD) Rising consumer demand\nE) Subsidy reduction",
+    "Answer": "B) Erratic monsoons and weather disruptions",
+    "Details": "Erratic monsoons, droughts, and extreme weather impact food production, leading to inflationary pressures."
+  },
+  {
+    "Question": "Which factor most affects India’s export competitiveness?",
+    "Options": "A) Geopolitical risks\nB) High logistics costs\nC) Weak global demand\nD) Supply chain disruptions\nE) All of the above",
+    "Answer": "E) All of the above",
+    "Details": "India’s exports are affected by global trade slowdown, logistics inefficiencies, and protectionist policies."
+  },
+  {
+    "Question": "What is India’s key strategy to enhance domestic manufacturing and trade resilience?",
+    "Options": "A) Make in India initiative\nB) Production-Linked Incentive (PLI) scheme\nC) Import Substitution Policy\nD) Special Economic Zones Expansion\nE) Export Credit Incentives",
+    "Answer": "B) Production-Linked Incentive (PLI) scheme",
+    "Details": "The PLI scheme boosts domestic manufacturing, reduces import dependency, and improves trade resilience."
+  }
+]
